@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🎮 Cloud Tic Tac Toe</h1>
+
+        <p class="subtitle">
+            Create a lobby and challenge a friend online.
+        </p>
+
+        <div class="menu">
+
+            <button id="createBtn">
+                Create Lobby
+            </button>
+
+            <div class="join-box">
+
+                <input
+                    type="text"
+                    id="roomInput"
+                    maxlength="6"
+                    placeholder="Enter Lobby Code"
+                >
+
+                <button id="joinBtn">
+                    Join Lobby
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="room-section">
+            <h2 id="roomCode"></h2>
+        </div>
+
+        <div class="status-box">
+            <p id="status">
+                Create or join a lobby to begin.
+            </p>
+        </div>
+
+        <div id="board" class="board">
+
+            <div data-cell="0" class="cell"></div>
+            <div data-cell="1" class="cell"></div>
+            <div data-cell="2" class="cell"></div>
+
+            <div data-cell="3" class="cell"></div>
+            <div data-cell="4" class="cell"></div>
+            <div data-cell="5" class="cell"></div>
+
+            <div data-cell="6" class="cell"></div>
+            <div data-cell="7" class="cell"></div>
+            <div data-cell="8" class="cell"></div>
+
+        </div>
+
+        <footer>
+            <p>
+                Built with Cloudflare Pages & Durable Objects
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
